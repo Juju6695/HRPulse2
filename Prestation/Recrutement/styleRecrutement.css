@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    height: 300vh;
+}
+header {
+    height: 90vh;
+    width: 100vw;
+    background-image: url(Image/Recrutement.jpg);
+    background-size: cover;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: black
+}
+
+
+.nav-bar{
+    position: sticky; top: 0;
+    background-color: darkkhaki;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.nav-links > ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.nav-links li {
+    background: darkkhaki;
+}
+
+.has-prestation {
+    position: relative;
+}
+
+.has-prestation:hover .sous-prestation{
+    display: block;
+}
+
+.sous-prestation {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: max-content;
+}
+
+.sous-prestation li a:hover{
+    background: wheat;
+}
+
+.has-accompagnement{
+    position: relative;
+}
+
+.has-accompagnement:hover .sous-accompagnement{
+    display: block;
+}
+
+.sous-accompagnement {
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: max-content;
+}
+
+.sous-accompagnement li a:hover {
+    background: wheat;
+}

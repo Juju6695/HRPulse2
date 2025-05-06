@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Pulse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>HR Pulse</h1>
+    </header>
+        <nav class="nav-bar">
+            <a class="logo" href="#">HR Pulse</a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Acceuil</a></li>
+                        <li class="has-prestation"><a href="#">Prestation RH</a>
+                            <ul class="sous-prestation">
+                                <li><a href="Prestation/Recrutement/Recrutement.html">Recrutement</a></li>
+                                <li><a href="#">Intégration</a></li>
+                                <li><a href="#">Gestion compétence/formation</a></li>
+                                <li><a href="#">Conseil et organisation RH</a></li>
+                                <li><a href="#">Relation social et droit du travail</a></li>
+                                <li><a href="#">Qualité de vie au travail</a></li>
+                                <li><a href="#">SiRH</a></li>
+                            </ul></li>
+                        <li class="has-accompagnement"><a href="#">Coaching</a>
+                            <ul class="sous-accompagnement">
+                                <li><a href="#">Rédaction CV</a></li>
+                                <li><a href="#">Rédaction Lettre de motivation</a></li>
+                                <li><a href="#">Préparation entretien</a></li>
+                                <li><a href="#">Trouver un emploi</a></li>
+                            </ul></li>
+                        <li><a href="#">Mes clients</a></li>
+                        <li><a href="#meConnaitre">Me connaitre</a></li>
+                        <li><a href="#meContacter">Me contacter</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="acceuil">
+        </div>
+
+        <div class="me-connaitre" id="meConnaitre">
+            <div class="me-connaitre-text">
+                <h2 class="me-connaitre-titre">En savoir plus sur moi</h2>
+                <p>
+                    Moi c'est Zina, je viens d'Athène, j'aime le souvlaki et le SiRH.<br>
+                    J'ai fait mes études entre Athène et Copenhague. Durant mes études j'ai appris l'anglais
+                    et le français.<br>
+                    Arrivée en France, j'ai travaillé dans divers domaine concernant les ressources humaines.
+                    Durant cette période j'ai pu étudier le code du travail français.<br>
+                    Aujourd'hui je mets mes compétence à votre disposition.
+                </p>
+            </div>
+            <div class="me-connaitre-image"><img src="meConnaitre.jpg"></div>
+        </div>
+        
+        <div class="me-contacter" id="meContacter">
+            <h2 class="titre-contact"> N'hésitez pas à me contacter !</h2>
+            <form class="contact-nom">
+                <div class="nomPrenom withgap">
+                    <input type="text" name="nom" class="nom" id="nom" placeholder="Nom" required>
+                    <div class="resultat-nom" id="nomValidation"></div>   
+                    <input type="text" name="prenom" class="prenom" id="prenom" placeholder="Prénom">
+                    <div class="resultat-prenom" id="prenomValidation"></div>
+                </div>
+                <div class="telEmail">
+                    <label><input type="tel" name="telephone" id="telephone" placeholder="Téléphone" required /></label>
+                    <div class="resultat-telephone" id="telephoneValidation"></div>
+                    <label><input type="email" name="email" id="email" placeholder="Email" required /></label>
+                    <div class="resultat-email" id="emailValidation"></div>
+                </div>
+            </br>
+                <p>
+                    <label><textarea rows="10" cols="100" name="demande" id="demande" placeholder="Votre demande"></textarea></label>
+                </p>
+            </br>
+                <p>
+                    <input type="submit" value="Envoyer" id="submitBtn" />
+                </p>
+            </form>
+        </div>
+    </body>
+    <footer>
+        <p>En cours de fabrication,</p>
+        <p>Bientôt en service, peut-être !</p>
+    </footer>
+</html>
