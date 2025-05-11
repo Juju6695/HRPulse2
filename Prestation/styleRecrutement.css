@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
 }
 body {
-    height: 300vh;
+    height: 250vh;
+    background-color: rgb(255, 255, 255);
 }
 header {
     height: 90vh;
-    width: 100vw;
     background-image: url(Image/Recrutement.jpg);
     background-size: cover;
 }
@@ -25,7 +26,7 @@ header {
 .nav-bar{
     position: sticky; top: 0;
     background-color: darkkhaki;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -90,4 +91,77 @@ header {
 
 .sous-accompagnement li a:hover {
     background: wheat;
+}
+
+/* RECRUTEMENT */
+
+.recrutement {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+/* INTEGRATION */
+
+.integration {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+div {
+    scroll-margin: 70px;
+}
+/* GESTION */
+
+.gestion {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+/* CONSEIL */
+
+.conseil {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+/* RELATION */
+
+.relation {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+/* QUALITE */
+
+.qualite {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+/* SIRH */
+
+.sirh {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
 }

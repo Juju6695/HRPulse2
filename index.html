@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR Pulse</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -18,38 +19,61 @@
             <a class="logo" href="#">HR Pulse</a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#">Acceuil</a></li>
-                        <li class="has-prestation"><a href="#">Prestation RH</a>
+                        <li><a href="index.html">Acceuil</a></li>
+                        <li class="has-prestation"><a href="Prestation/prestation.html">Prestation RH</a>
                             <ul class="sous-prestation">
-                                <li><a href="Prestation/Recrutement/Recrutement.html">Recrutement</a></li>
-                                <li><a href="#">Intégration</a></li>
-                                <li><a href="#">Gestion compétence/formation</a></li>
-                                <li><a href="#">Conseil et organisation RH</a></li>
-                                <li><a href="#">Relation social et droit du travail</a></li>
-                                <li><a href="#">Qualité de vie au travail</a></li>
-                                <li><a href="#">SiRH</a></li>
+                                <li><a href="Prestation/prestation.html#recrutement">Recrutement</a></li>
+                                <li><a href="Prestation/prestation.html#integration">Intégration</a></li>
+                                <li><a href="Prestation/prestation.html#gestion">Gestion compétence/formation</a></li>
+                                <li><a href="Prestation/prestation.html#conseil">Conseil et organisation RH</a></li>
+                                <li><a href="Prestation/prestation.html#relation">Relation social et droit du travail</a></li>
+                                <li><a href="Prestation/prestation.html#qualite">Qualité de vie au travail</a></li>
+                                <li><a href="Prestation/prestation.html#sirh">SiRH</a></li>
                             </ul></li>
-                        <li class="has-accompagnement"><a href="#">Coaching</a>
+                        <li class="has-accompagnement"><a href="Coaching/coaching.html">Coaching</a>
                             <ul class="sous-accompagnement">
-                                <li><a href="#">Rédaction CV</a></li>
-                                <li><a href="#">Rédaction Lettre de motivation</a></li>
-                                <li><a href="#">Préparation entretien</a></li>
-                                <li><a href="#">Trouver un emploi</a></li>
+                                <li><a href="Coaching/coaching.html#redactionCV">Rédaction CV</a></li>
+                                <li><a href="Coaching/coaching.html#redactionLM">Rédaction Lettre de motivation</a></li>
+                                <li><a href="Coaching/coaching.html#preparation">Préparation entretien</a></li>
+                                <li><a href="Coaching/coaching.html#trouver">Trouver un emploi</a></li>
                             </ul></li>
-                        <li><a href="#">Mes clients</a></li>
+                        <li><a href="#client">Mes clients</a></li>
                         <li><a href="#meConnaitre">Me connaitre</a></li>
                         <li><a href="#meContacter">Me contacter</a></li>
                     </ul>
                 </div>
         </nav>
-        <div class="acceuil">
-        </div>
+    <main>    
+        <section class="acceuil">
+            <div>
+            <video width="500" autoplay muted playinline loop><source src="videoAcceuil.mp4" type="video/mp4">your browser does not support the video tag.</video>
+            </div>
+            <div>
+            <p> Bienvenue cher professionnel cher particulier. Je suis là pour vous présenter et proposer mes divers services. Que ça vous plaises ou non je vais vous bouffer tous vos sous sous !!!</p>
+            </div>
+        </section>
 
-        <div class="me-connaitre" id="meConnaitre">
+        <section class="prestation" id="prestation">
+            <h2>Mes prestations RH</h2>
+        </section>
+
+        <section class="coaching" id="coaching">
+            <h2>Besoin d'aide pour votre carrière ?</h2>
+        </section>
+
+        <section class="client" id="client">
+            <h2>Ils me font confiance</h2>
+                <div class="client-lien">
+                    <a href="https://www.callista.com/" target="_blank"><img src="callista.svg" alt="text" width="15%"></a>
+                    <a href="https://gaala.com/fr?srsltid=AfmBOopeDKwws4-0WiGYX9nwVaMBUYoUyMw0AkuD6uvJ81V64JjM-HAH" target="_blank"><img src="gala.svg" alt="text" width="15%"></a>
+                </div>
+        </section>
+
+        <section class="me-connaitre" id="meConnaitre">
             <div class="me-connaitre-text">
-                <h2 class="me-connaitre-titre">En savoir plus sur moi</h2>
+                <h2>En savoir plus sur moi</h2>
                 <p>
-                    Moi c'est Zina, je viens d'Athène, j'aime le souvlaki et le SiRH.<br>
+                    Moi c'est Zina, je viens d'Athènes, j'aime le souvlaki et le SiRH.<br>
                     J'ai fait mes études entre Athène et Copenhague. Durant mes études j'ai appris l'anglais
                     et le français.<br>
                     Arrivée en France, j'ai travaillé dans divers domaine concernant les ressources humaines.
@@ -57,35 +81,38 @@
                     Aujourd'hui je mets mes compétence à votre disposition.
                 </p>
             </div>
-            <div class="me-connaitre-image"><img src="meConnaitre.jpg"></div>
-        </div>
+            <div class="me-connaitre-image"><img src="meConnaitre.jpg" alt="" width="100%">
+            </div>
+        </section>
         
-        <div class="me-contacter" id="meContacter">
+        <section class="me-contacter" id="meContacter">
             <h2 class="titre-contact"> N'hésitez pas à me contacter !</h2>
-            <form class="contact-nom">
+            <form class="contact-nom" id="contact">
                 <div class="nomPrenom withgap">
-                    <input type="text" name="nom" class="nom" id="nom" placeholder="Nom" required>
+                    <label><input type="text" name="nom" class="nom" id="nom" placeholder="Nom" required>*</label>
                     <div class="resultat-nom" id="nomValidation"></div>   
                     <input type="text" name="prenom" class="prenom" id="prenom" placeholder="Prénom">
                     <div class="resultat-prenom" id="prenomValidation"></div>
                 </div>
+            <br>
                 <div class="telEmail">
-                    <label><input type="tel" name="telephone" id="telephone" placeholder="Téléphone" required /></label>
+                    <label><input type="tel" name="telephone" class="telephone" id="telephone" placeholder="Téléphone" required>*</label>
                     <div class="resultat-telephone" id="telephoneValidation"></div>
-                    <label><input type="email" name="email" id="email" placeholder="Email" required /></label>
+                    <label><input type="email" name="email" class="email" id="email" placeholder="Email" required>*</label>
                     <div class="resultat-email" id="emailValidation"></div>
                 </div>
-            </br>
+            <br>
                 <p>
-                    <label><textarea rows="10" cols="100" name="demande" id="demande" placeholder="Votre demande"></textarea></label>
+                    <label><textarea rows="10" cols="70" name="demande" id="demande" placeholder="Votre demande" required></textarea></label>
                 </p>
-            </br>
+            <br>
                 <p>
-                    <input type="submit" value="Envoyer" id="submitBtn" />
+                    <input type="submit" value="Envoyer" id="submitBtn">
                 </p>
             </form>
-        </div>
-    </body>
+        </section>
+    </main>
+</body>
     <footer>
         <p>En cours de fabrication,</p>
         <p>Bientôt en service, peut-être !</p>

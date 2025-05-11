@@ -6,17 +6,22 @@
     font-family: 'Quicksand', sans-serif;
 }
 body {
-    height: 100vh;
+    height: 250vh;
     background-color: rgb(255, 255, 255);
 }
 
 header {
-    height: 90vh;
-    width: 100vw;
+    height: 70vh;
     background-image: url(Athene.png);
     background-size: cover;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
 footer {
     height: 10vh;
     background-color: darkslategray;
@@ -42,9 +47,10 @@ h1 {
 }
 /* LA BARRE DE NAVIGATION */
 .nav-bar{
-    position: sticky; top: 0;
+    position:sticky; 
+    top: 0;
     background-color: darkkhaki;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -111,21 +117,88 @@ h1 {
     background: wheat;
 }
 
-.acceuil {
-    height: 50vh;
-    background: beige;
-    margin: 10px;
+section {
+    scroll-margin: 70px;
 }
-/* ME CONNAITRE*/
-.me-connaitre {
-    background-color: beige;
+/* ACCEUIL */
+
+.acceuil {
+    height: auto;
     margin: 10px;
-    display: grid;
-    grid-template-columns: 1405px 200px;
+    display: flex;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+    padding-top: 10px;
+}
+.acceuil p {
+    margin-top: 10%;
+    text-align:left;
+    font-size: large;
+    padding: 20px;
 }
 
-.me-connaitre img{
-    height: 100%;
+/* PRESTATION */
+
+.prestation {
+    background-color: beige;
+    height: 40vh;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+.prestation h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* COACHING */
+
+.coaching {
+    height: 40vh;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+.coaching h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* CLIENT */
+
+.client {
+    height: 25vh;
+    background: beige;
+    margin: 10px;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+}
+
+.client h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.client-lien{
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.client-lien img {
+    margin: 40px;
+}
+
+/* ME CONNAITRE*/
+
+.me-connaitre{
+margin: 10px;
+display: flex;
+height: auto;
+max-width: 2000px;
+box-sizing: 0 auto;
 }
 
 .me-connaitre h2 {
@@ -134,15 +207,26 @@ h1 {
 }
 
 .me-connaitre p {
-text-align: center;
+text-align: left;
 padding-top: 50px;
 font-size: large;
+max-width: 80%;
+padding-left: 70px;
+}
+
+.me-connaitre img {
+float: bottom right;
 }
 
 /* ME CONTACTER */
+
 .me-contacter {
     background-color: beige;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 2000px;
+    box-sizing: 0 auto;
 }
 
 .contact-nom {
@@ -159,21 +243,16 @@ font-size: large;
     width: 400px;
 }
 
-.nom .prenom {
-    width: 50px;
-    height: 10px;
-    margin: 20px;
-}
-
 .telEmail {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 500px;
-}
+    width: 400px;
+}    
 
 .me-contacter h2 {
     text-align: center;
     padding-top: 20px;
 }
+
