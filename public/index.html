@@ -17,7 +17,8 @@
     </header>
         <nav class="nav-bar">
             <a class="logo" href="#">HR Pulse</a>
-                <div class="nav-links">
+            <button class="hamburger" id="hamburger">&#9776;</button>
+                <div class="nav-links" id="navLinks">
                     <ul>
                         <li><a href="index.html">Acceuil</a></li>
                         <li class="has-prestation"><a href="Prestation/prestation.html">Prestation RH</a>
@@ -88,29 +89,32 @@
         <section class="me-contacter" id="meContacter">
             <h2 class="titre-contact"> N'hésitez pas à me contacter !</h2>
             <div class="forme-et-ligne">
-            <form class="contact-nom" id="contact">
+            <form class="contact-nom" id="contact" action="/send-email" method="POST">
                 <div class="nomPrenom withgap">
-                    <label><input type="text" name="nom" class="nom" id="nom" placeholder="Nom" required>*</label>
+                    <label><input type="text" name="nom" class="nom" id="nom" placeholder="Nom" required> *</label>
                     <div class="resultat-nom" id="nomValidation"></div>   
                     <input type="text" name="prenom" class="prenom" id="prenom" placeholder="Prénom">
                     <div class="resultat-prenom" id="prenomValidation"></div>
                 </div>
             <br>
                 <div class="telEmail">
-                    <label><input type="tel" name="telephone" class="telephone" id="telephone" placeholder="Téléphone" required>*</label>
+                    <label><input type="tel" name="telephone" class="telephone" id="telephone" placeholder="Téléphone" required> *</label>
                     <div class="resultat-telephone" id="telephoneValidation"></div>
-                    <label><input type="email" name="email" class="email" id="email" placeholder="Email" required>*</label>
+                    <label><input type="email" name="email" class="email" id="email" placeholder="Email" required> *</label>
                     <div class="resultat-email" id="emailValidation"></div>
                 </div>
             <br>
                 <p>
-                    <label><textarea rows="10" cols="70" name="demande" id="demande" placeholder="Votre demande" required></textarea></label>
+                    <label><textarea rows="10" name="demande" id="demande" placeholder="Votre demande" required></textarea></label>
                 </p>
             <br>
                 <p>
                     <input type="submit" value="Envoyer" id="submitBtn">
                 </p>
             </form>
+            <div id="confirmationMessage" style="display: none; color:pink; margin-top: 10px;">
+            Message envoyé avec succès !
+            </div>
             <div class="vertical-line"></div>
             <div class="coordonnees">
                 <p>Email : Zina@melek.gr</p>

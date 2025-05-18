@@ -45,7 +45,23 @@ h1 {
     font-weight: bold;
     color: black
 }
+
+@media (max-width: 768px) {
+    h1{
+        position: static;      /* revenir au flux normal */
+        left: auto;           /* annuler la position à gauche */
+        line-height: normal;  /* ajuster hauteur de ligne */
+        font-size: 2em;       /* réduire taille pour mobile */
+        text-align: center;   /* centrer le texte */
+        margin: 0 auto;       /* centrer horizontalement si nécessaire */
+        display: block;       /* s'assurer que c'est un bloc */
+        width: 100%;
+        padding-top: 40px;
+    }
+}
+
 /* LA BARRE DE NAVIGATION */
+
 .nav-bar{
     position:sticky; 
     top: 0;
@@ -120,6 +136,50 @@ h1 {
 section {
     scroll-margin: 70px;
 }
+
+.hamburger {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* NAVBAR RESPONSIVE */
+
+@media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: block;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: #003366;
+      width: 100%;
+    }
+  
+    .nav-links ul li {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .sous-prestation, .sous-accompagnement {
+      position: static;
+      background-color: #004080;
+    }
+  }
+
 /* ACCEUIL */
 
 .acceuil {
@@ -130,11 +190,18 @@ section {
     box-sizing: 0 auto;
     padding-top: 10px;
 }
+
 .acceuil p {
     margin-top: 10%;
     text-align:left;
     font-size: large;
     padding: 20px;
+}
+
+@media (max-width: 768px) {
+    video {
+        display: none;
+    }
 }
 
 /* PRESTATION */
@@ -191,32 +258,68 @@ section {
     margin: 40px;
 }
 
+@media (max-width: 768px) {
+    .client-lien {
+        padding-top: 30px;
+    }
+    .client-lien img {
+        margin: 30px;
+        width: 110px;
+    }
+}
+
 /* ME CONNAITRE*/
 
 .me-connaitre{
-margin: 10px;
-display: flex;
-height: auto;
-max-width: 2000px;
-box-sizing: 0 auto;
-}
+    margin: 10px;
+    display: flex;
+    height: auto;
+    max-width: 2000px;
+    box-sizing: 0 auto;
+    }
+    
+    .me-connaitre h2 {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .me-connaitre p {
+    text-align: left;
+    padding-top: 50px;
+    font-size: large;
+    max-width: 80%;
+    padding-left: 70px;
+    }
+    
+    .me-connaitre img {
+    float: bottom right;
+    }
+  
+  /* Responsive version */
 
-.me-connaitre h2 {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.me-connaitre p {
-text-align: left;
-padding-top: 50px;
-font-size: large;
-max-width: 80%;
-padding-left: 70px;
-}
-
-.me-connaitre img {
-float: bottom right;
-}
+  @media (max-width: 768px) {
+    .me-connaitre {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .me-connaitre-text,
+    .me-connaitre-image {
+      width: 100%;
+      padding-top: 20px;
+    }
+  
+    .me-connaitre-text h2 {
+      text-align: center;
+      padding: 5px;
+    }
+  
+    .me-connaitre-text p {
+        text-align:left;
+        font-size: large;
+        padding-left: 20px;
+    }
+  }
 
 /* ME CONTACTER */
 
@@ -228,12 +331,14 @@ float: bottom right;
     max-width: 2000px;
     box-sizing: border-box;
     align-items: center;
-    height: 50vh;
+    height: auto;
 }
 
 .contact-nom {
     flex: none;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 20px;
 }
 
 .nomPrenom{
@@ -241,7 +346,8 @@ float: bottom right;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
+   width: 100%;
 }
 
 .telEmail {
@@ -249,7 +355,8 @@ float: bottom right;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
 }    
 
 .me-contacter h2 {
@@ -278,4 +385,30 @@ float: bottom right;
 .coordonnees {
     margin-left: 80px;
     padding-bottom: 100px;
+}
+
+textarea {
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 150px;
+}
+
+@media (max-width: 768px) {
+    textarea {
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .contact-nom {
+        width: 100%;
+        margin-left: 0;
+    }
+    .nomPrenom,
+    .telEmail {
+        max-width: 100%;
+        justify-content: space-around;
+    }
+   
 }
