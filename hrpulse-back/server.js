@@ -30,7 +30,7 @@ app.post('/send-email', (req, res) => {
 
 let mailOptions = {
     from: email,
-    to: 'kormannj66@gmail.com',
+    to: process.env.EMAIL_USER,
     subject: 'HRPulse',
     text: `Je suis ${nom} ${prenom}, vous pouvez me joindre par téléphone au : ${telephone} ou par mail : ${email}. Voilà ma demande : ${demande}`
 };

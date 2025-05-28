@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>HR Pulse</h1>
+
     </header>
         <nav class="nav-bar">
             <a class="logo" href="#">HR Pulse</a>
@@ -56,19 +56,70 @@
 
         <section class="prestation" id="prestation">
             <h2>Mes prestations RH</h2>
+                <div class="carrousel-wrapper">
+                    <button id="prevBtn" class="nav-btn prev">&#8592;</button>
+                        <div class="contenaire-prestation" id="carrousel">
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#recrutement">Le début, le RECRUTEMENT</a></h3>
+                                    <p>Finding the right person isn't a fluke; it's a process. I help companies build meaningful, sustainable recruitment processes that align with their culture. People first, always. </p>
+                            </div>
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#integration">l'INTEGRATION dans vos équipes !</a></h3>
+                                    <p>Successful hiring is all about signing the contract. I work with you to create clear, seamless, and engaging onboarding processes so that each new talent feels at home from the start.</p>
+                            </div>
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#gestion">La gestion des COMPETENCES et des FORMATIONS</a></h3>
+                                    <p>Anticipate, grow, and retain. I identify key skills and gaps to fill, and I develop training plans tailored to your challenges... and your teams.</p>
+                            </div>
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#conseil">conseils RH et et l'organisation</a></h3>
+                                    <p>Need to structure, clarify, or reorganize your HR practices? I offer an external perspective and a pragmatic, tailored approach to combine efficiency and human coherence.</p>
+                            </div>
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#relation">social et droit du travail</a></h3>
+                                    <p>I help you navigate your relationships with your employee representatives with confidence, align your practices with labor law, and prevent tensions rather than suffer them.</p>
+                            </div>
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#qualite">de vie au travail</a></h3>
+                                    <p>Because sustainable performance requires well-being, I support you in improving your managerial practices, your internal balances, and making QVT a real lever for engagement. </p>
+                            </div>
+                            <div class="bloc">
+                                <h3><a href="Prestation/prestation.html#sirh">SiRH</a></h3>
+                            </div>
+                        </div>
+                    <button id="nextBtn" class="nav-btn next">&#8594;</button>
+                </div>
         </section>
 
         <section class="coaching" id="coaching">
             <h2>Besoin d'aide pour votre carrière ?</h2>
+                <div class="carrousel-coaching">
+                <button id="coachingPrevBtn" class="coaching-Btn prev">&#8592;</button>
+                <div class="contenaire-coaching" id="carrouselCoaching">
+                    <div class="bloc">
+                        <h3><a href="Coaching/coaching.html#redactionCV">Rédaction de CV</a></h3>
+                    </div>
+                    <div class="bloc">
+                        <h3><a href="Coaching/coaching.html#redactionLM">Rédaction de lettre de motivation</a></h3>
+                    </div>
+                    <div class="bloc">
+                        <h3><a href="Coaching/coaching.html#preparation">Préparation d'entretien</a></h3>
+                    </div>
+                    <div class="bloc">
+                        <h3><a href="Coaching/coaching.html#trouver">Trouver un emploi</a></h3>
+                    </div>
+                </div>
+                <button id="coachingNextBtn" class="coaching-Btn next">&#8594;</button>
+                </div>
         </section>
-
-        <section class="client" id="client">
+        
+        <div class="client" id="client">
             <h2>Ils me font confiance</h2>
                 <div class="client-lien">
                     <a href="https://www.callista.com/" target="_blank"><img src="callista.svg" alt="text" width="15%"></a>
                     <a href="https://gaala.com/fr?srsltid=AfmBOopeDKwws4-0WiGYX9nwVaMBUYoUyMw0AkuD6uvJ81V64JjM-HAH" target="_blank"><img src="gala.svg" alt="text" width="15%"></a>
                 </div>
-        </section>
+            </div>
 
         <section class="me-connaitre" id="meConnaitre">
             <div class="me-connaitre-text">
@@ -91,35 +142,29 @@
             <div class="forme-et-ligne">
             <form class="contact-nom" id="contact" action="/send-email" method="POST">
                 <div class="nomPrenom withgap">
-                    <label><input type="text" name="nom" class="nom" id="nom" placeholder="Nom" required> *</label>
+                    <label><input type="text" name="nom" class="nom" id="nom" placeholder=" Nom" required> *</label>
                     <div class="resultat-nom" id="nomValidation"></div>   
-                    <input type="text" name="prenom" class="prenom" id="prenom" placeholder="Prénom">
+                    <input type="text" name="prenom" class="prenom" id="prenom" placeholder=" Prénom">
                     <div class="resultat-prenom" id="prenomValidation"></div>
                 </div>
             <br>
                 <div class="telEmail">
-                    <label><input type="tel" name="telephone" class="telephone" id="telephone" placeholder="Téléphone" required> *</label>
+                    <label><input type="tel" name="telephone" class="telephone" id="telephone" placeholder=" Téléphone" required> *</label>
                     <div class="resultat-telephone" id="telephoneValidation"></div>
-                    <label><input type="email" name="email" class="email" id="email" placeholder="Email" required> *</label>
+                    <label><input type="email" name="email" class="email" id="email" placeholder=" Email" required> *</label>
                     <div class="resultat-email" id="emailValidation"></div>
                 </div>
             <br>
                 <p>
-                    <label><textarea rows="10" name="demande" id="demande" placeholder="Votre demande" required></textarea></label>
+                    <label><textarea rows="10" name="demande" id="demande" placeholder=" Votre demande" required></textarea></label>
                 </p>
             <br>
                 <p>
-                    <input type="submit" value="Envoyer" id="submitBtn">
+                    <input type="submit" value="Envoyer" id="submitBtn" class="btn">
                 </p>
             </form>
             <div id="confirmationMessage" style="display: none; color:pink; margin-top: 10px;">
             Message envoyé avec succès !
-            </div>
-            <div class="vertical-line"></div>
-            <div class="coordonnees">
-                <p>Email : Zina@melek.gr</p>
-                <br>
-                <p>Tel : 0102030405</p>
             </div>
             </div>
         </section>
@@ -128,5 +173,10 @@
     <footer>
         <p>En cours de fabrication,</p>
         <p>Bientôt en service, peut-être !</p>
+        <br>
+        <div class="coordonnees">
+            <p>Email : Zina@melek.gr</p>
+            <p>Tel : 0102030405</p>
+        </div>
     </footer>
 </html>
